@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother and Daughter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcccb;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffcccb;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mother and Daughter Moments</h1>
+    </header>
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='image_tree1.jpg') }}" alt="Tree Image">
+        <img src="{{ url_for('static', filename='image_mother1.jpeg') }}" alt="Mother Image 1">
+        <img src="{{ url_for('static', filename='image_mother2.jpeg') }}" alt="Mother Image 2">
+    </div>
+    <footer>
+        <p>&copy; 2023 Mother and Daughter Gallery</p>
+    </footer>
+</body>
+</html>

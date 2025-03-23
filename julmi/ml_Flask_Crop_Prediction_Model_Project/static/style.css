@@ -1,0 +1,91 @@
+body {
+    background-image: url("farm1.jpg"); /* Ensure the image is in the static folder */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent repetition */
+    background-position: center; /* Center the image */
+    font-family: 'Arimo', sans-serif; /* Set a clean font */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text for better contrast */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle shadow for better readability */
+}
+
+.login {
+    width: 450px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8); /* Slightly darker semi-transparent background */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow for a modern look */
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    padding: 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 2px solid #4CAF50;
+    border-radius: 8px; /* More rounded input fields */
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.9); /* Light background for inputs */
+    color: #333; /* Dark text for better readability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+input:focus {
+    border-color: #45a049; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0px 0px 8px rgba(69, 160, 73, 0.8); /* Add a glowing effect */
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px; /* Rounded button */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    width: 90%;
+    text-transform: uppercase; /* Make button text uppercase */
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#predi {
+    text-align: center;
+    font-size: 1.8em;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
