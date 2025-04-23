@@ -1,0 +1,91 @@
+**R² and Adjusted R² in Linear Regression**
+
+---
+
+### 📌 R² (Coefficient of Determination)
+- **Definition**: Measures how well the independent variables explain the variation in the dependent variable.
+- **Formula**:
+  
+  \[ R^2 = 1 - \frac{SS_{res}}{SS_{tot}} \]
+
+  Where:
+  - \( SS_{res} \): Sum of Squares of Residuals
+  - \( SS_{tot} \): Total Sum of Squares
+
+- **Interpretation**:
+  - R² = 0: Model explains none of the variance.
+  - R² = 1: Model explains all of the variance.
+  - Higher R² = Better fit.
+
+- **Use Case**:
+  - When you want to evaluate how well your regression model fits the data.
+
+---
+
+### 📌 Adjusted R²
+- **Definition**: Modified version of R² that adjusts for the number of predictors in the model.
+- **Formula**:
+
+  \[ \text{Adjusted } R^2 = 1 - \left( \frac{(1 - R^2)(n - 1)}{n - k - 1} \right) \]
+
+  Where:
+  - \( n \): Number of observations
+  - \( k \): Number of predictors
+
+- **Why Use It?**
+  - Prevents overfitting by penalizing unnecessary predictors.
+  - Helps compare models with different numbers of predictors.
+
+- **Use Case**:
+  - Use Adjusted R² instead of R² when comparing models with different numbers of independent variables.
+
+---
+
+### 📌 Mean Squared Error (MSE)
+- **Definition**: Measures the average squared difference between actual and predicted values.
+- **Formula**:
+
+  \[ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 \]
+
+- **Interpretation**:
+  - Lower MSE means better model performance.
+  - Sensitive to outliers due to squaring.
+
+- **Use Case**:
+  - Evaluate regression model performance.
+  - Preferable when large errors are particularly undesirable.
+
+---
+
+### 📌 Mean Absolute Error (MAE)
+- **Definition**: Measures the average absolute difference between actual and predicted values.
+- **Formula**:
+
+  \[ MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i| \]
+
+- **Interpretation**:
+  - Lower MAE indicates better predictive accuracy.
+  - More robust to outliers compared to MSE.
+
+- **Use Case**:
+  - Use when you want a simple interpretation of average model error.
+
+---
+
+### 📌 Root Mean Squared Error (RMSE)
+- **Definition**: Square root of MSE; brings error back to the original units.
+- **Formula**:
+
+  \[ RMSE = \sqrt{MSE} \]
+
+- **Interpretation**:
+  - Lower RMSE means better performance.
+  - Penalizes large errors more than MAE.
+
+- **Use Case**:
+  - Common in regression tasks where interpretability in original units is important.
+
+---
+
+Let me know if you'd like visual comparisons or practical examples added!
+

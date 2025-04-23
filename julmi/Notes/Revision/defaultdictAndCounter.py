@@ -9,10 +9,12 @@ for k, v in s:
 print(d)
 
 
+'''
+This the benifit for using the defaultdict, if we use a normal dict,
+ we have to check if the key is in the dict or not, and then append the value to the list.
+ But with defaultdict, we can just append the value to the list without checking if the key is in the dict or not.
+'''
 
-# This the benifit for using the defaultdict, if we use a normal dict,
-#  we have to check if the key is in the dict or not, and then append the value to the list.
-#  But with defaultdict, we can just append the value to the list without checking if the key is in the dict or not.
 
 # Here normal dict will raise a KeyError if the key is not in the dict.
 print(d['pink'])
