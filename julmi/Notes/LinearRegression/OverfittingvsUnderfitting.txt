@@ -1,0 +1,26 @@
+🔹 Underfitting
+Model is too simple to capture the underlying structure of the data.
+Symptoms:
+High training error (High Bias)
+High validation/test error (High Variance)
+Causes:
+Model is too simple
+Not enough features
+Too much regularization
+Solution:
+Add more features or complexity, Reduce regularization
+
+🔹 Overfitting
+Model is too complex and learns noise from the training data.
+Symptoms:
+Low training error (Low Bias)
+High validation/test error (High Variance)
+Causes:
+Too many features
+Not enough training data
+Lack of regularization
+Solution:
+Use regularization (L1/L2)
+Use simpler models
+Cross-validation
+Get more data
