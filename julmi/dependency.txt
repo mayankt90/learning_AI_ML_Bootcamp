@@ -6,3 +6,6 @@ seaborn
 flask
 memory_profiler
 streamlit
+
+
+#https://online.fliphtml5.com/grdgl/hfrm/#p=2
